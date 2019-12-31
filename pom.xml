@@ -18,6 +18,20 @@
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
 	</properties>
+	
+	<repositories>
+    <repository>
+        <id>soluvas-public-snapshots</id>
+        <url>http://nexus.bippo.co.id/nexus/content/repositories/soluvas-public-snapshots/</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+	
 
 	<dependencies>
 		<dependency>
@@ -55,12 +69,10 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-    	<groupId>Ab</groupId>
-    	<artifactId>com.google</artifactId>
-    	<version>0.0.4.3</version>
-    	 <scope>system</scope>
-        <systemPath>${basedir}/lib/Ab.jar</systemPath>
-    </dependency>
+         <groupId>org.alicebot.ab</groupId>
+         <artifactId>ab</artifactId>
+         <version>4.0.4-SNAPSHOT</version>
+     </dependency>
 	</dependencies>
 
 	<dependencyManagement>
