@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyChatbotService {
 	private static final boolean TRACE_MODE = false;
-	static String botName ="test";
+	static String botName ="super";
 	
 	public String botService(String msg) {
 		try {
