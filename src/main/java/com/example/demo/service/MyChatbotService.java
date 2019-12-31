@@ -19,7 +19,7 @@ public class MyChatbotService {
         	String resourcesPath = getResourcesPath();
         	System.out.println(resourcesPath);
         	System.out.println(msg);
-        	Bot bot = new Bot("test",resourcesPath);
+        	Bot bot = new Bot("super",resourcesPath);
         	Chat chatSession = new Chat(bot);
         	bot.brain.nodeStats();
         	String textLine = "";
