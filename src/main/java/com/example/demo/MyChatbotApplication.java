@@ -7,12 +7,14 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableDiscoveryClient
 @Configuration
 @EnableAutoConfiguration
 @EnableEurekaClient
+@RestController
 public class MyChatbotApplication {
 	  @RequestMapping("/")
 	  public String home() {
